@@ -1,0 +1,14 @@
+def reverse_range(min, max)
+final = [] # array = [input] number "i"
+  i = max - 1
+  while i > min
+    final << i
+  i -= 1
+  end
+    return final
+end
+#return ((max-1)...(min+1)).to_a #excludes the last one with 3 dots...
+
+print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]
+puts
+print reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
